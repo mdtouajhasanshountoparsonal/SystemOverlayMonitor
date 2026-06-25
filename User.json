@@ -1,1 +1,25 @@
-
+{
+  "global_notes": "Welcome to System Overlay Monitor!",
+  "users": {
+    "user1": {
+      "password": "password123",
+      "status": "active",
+      "notes": "Premium access active. Thank you!"
+    },
+    "user2": {
+      "password": "user2pass",
+      "status": "expired",
+      "notes": "Tomar quota sesh! Amaro sathe jogajog koro."
+    },
+    "user3": {
+      "password": "mypassword",
+      "status": "blocked",
+      "notes": "Account suspended. Contact THS."
+    },
+    "SHANTO": {
+      "password": "SHANTO",
+      "status": "active",
+      "notes": "Premium access active. Thank you!"
+    }
+  }
+}
