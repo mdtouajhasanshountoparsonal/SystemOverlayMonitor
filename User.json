@@ -18,8 +18,8 @@
     },
     "SHANTO": {
       "password": "SHANTO",
-      "status": "active",
-      "notes": "Premium access active. Thank you!"
+      "status": "blocked",
+      "notes": "Account suspended. Contact THS."
     }
   }
 }
