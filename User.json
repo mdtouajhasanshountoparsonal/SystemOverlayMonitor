@@ -20,6 +20,11 @@
       "password": "SHANTO",
       "status": "active",
       "notes": "Premium access active. Thank you!"
+    },
+    "NAHID": {
+      "password": "NAHID",
+      "status": "active",
+      "notes": "Premium access active. Thank you!"
     }
   }
 }
