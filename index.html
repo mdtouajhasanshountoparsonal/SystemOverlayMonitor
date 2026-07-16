@@ -135,6 +135,32 @@
         footer { position: relative; z-index: 1; border-top: 1px solid rgba(0,229,255,0.08); padding: 24px 40px; display: flex; align-items: center; justify-content: space-between; }
         footer .copy { font-family: var(--font-display); font-size: 0.72rem; color: var(--text-dim); }
 
+        /* CREATOR */
+        .creator { position: relative; z-index: 1; padding: 80px 40px; }
+        .creator-inner { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: auto 1fr; gap: 40px; align-items: center; background: var(--surface); border: 1px solid rgba(0,229,255,0.08); border-radius: 14px; padding: 40px; }
+        .creator-left { text-align: center; }
+        .avatar-ring { width: 100px; height: 100px; border-radius: 50%; border: 2.5px solid var(--accent); display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 25px var(--glow); animation: float 3s ease-in-out infinite; }
+        .avatar-inner { width: 85px; height: 85px; border-radius: 50%; background: var(--bg); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1.8rem; font-weight: bold; color: var(--accent); }
+        @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .creator-right h3 { font-family: var(--font-display); font-size: 1.3rem; color: var(--white); margin-bottom: 4px; }
+        .creator-role { font-family: var(--font-display); font-size: 0.78rem; color: var(--cyan); letter-spacing: 1px; margin-bottom: 12px; }
+        .creator-bio { font-size: 0.88rem; color: var(--text-dim); line-height: 1.7; margin-bottom: 18px; }
+        .creator-stats { display: flex; gap: 28px; margin-bottom: 20px; }
+        .cstat { text-align: center; }
+        .cstat-num { display: block; font-family: var(--font-display); font-size: 1.4rem; font-weight: bold; color: var(--accent); }
+        .cstat-label { font-size: 0.7rem; color: var(--text-dim); }
+        .creator-links { display: flex; gap: 12px; flex-wrap: wrap; }
+        .creator-links a { font-family: var(--font-display); font-size: 0.75rem; padding: 9px 18px; border-radius: 5px; text-decoration: none; transition: all 0.3s; }
+        .cl-portfolio { background: rgba(0,229,255,0.1); color: var(--cyan); border: 1px solid rgba(0,229,255,0.25); }
+        .cl-portfolio:hover { background: var(--cyan); color: var(--bg); }
+        .cl-github { background: rgba(179,0,255,0.1); color: var(--purple); border: 1px solid rgba(179,0,255,0.25); }
+        .cl-github:hover { background: var(--purple); color: var(--white); }
+
+        @media (max-width: 768px) {
+            .creator-inner { grid-template-columns: 1fr; text-align: center; }
+            .creator-links { justify-content: center; }
+        }
+
         @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
         .reveal { opacity: 0; transform: translateY(25px); transition: all 0.6s ease; }
         .reveal.active { opacity: 1; transform: translateY(0); }
@@ -285,6 +311,31 @@
                 <div class="inst-step"><div class="inst-num">2</div><div><h4>Run the Application</h4><p>Double-click <code>SystemOverlayMonitor.exe</code>. Welcome splash plays, then login screen appears.</p></div></div>
                 <div class="inst-step"><div class="inst-num">3</div><div><h4>Login & Configure</h4><p>Enter your credentials. Open Settings from tray menu to toggle effects on/off.</p></div></div>
                 <div class="inst-step"><div class="inst-num">4</div><div><h4>Start Typing</h4><p>The overlay tracks your keystrokes in real-time. Watch mesh particles react to your words.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creator -->
+    <section class="creator">
+        <div class="creator-inner">
+            <div class="creator-left">
+                <div class="avatar-ring">
+                    <div class="avatar-inner">THS</div>
+                </div>
+            </div>
+            <div class="creator-right">
+                <h3>Md. Touaj Hasan Shounto</h3>
+                <div class="creator-role">Python Developer & UI Designer</div>
+                <p class="creator-bio">Building practical, user-friendly applications from invoice systems to real-time overlays. Every project is crafted with attention to detail and commitment to quality.</p>
+                <div class="creator-stats">
+                    <div class="cstat"><span class="cstat-num">5+</span><span class="cstat-label">Projects</span></div>
+                    <div class="cstat"><span class="cstat-num">3+</span><span class="cstat-label">Years</span></div>
+                    <div class="cstat"><span class="cstat-num">100%</span><span class="cstat-label">Free</span></div>
+                </div>
+                <div class="creator-links">
+                    <a href="https://mdtouajhasanshountoparsonal.github.io/PORTFOLIO/" target="_blank" class="cl-portfolio">PORTFOLIO</a>
+                    <a href="https://github.com/mdtouajhasanshountoparsonal" target="_blank" class="cl-github">GITHUB</a>
+                </div>
             </div>
         </div>
     </section>
